@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.movile.springbootmvc.controller.WelcomeControllerWebTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-03-09T19:53:56" hostname="note-318" time="6.35">
+  <properties/>
+  <testcase name="startTest" classname="com.movile.springbootmvc.controller.WelcomeControllerWebTest" time="6.35"/>
+  <system-out><![CDATA[2016-03-09 16:53:53.483  INFO 27502 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.movile.springbootmvc.controller.WelcomeControllerWebTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-03-09 16:53:53.488  INFO 27502 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-03-09 16:53:53.489  INFO 27502 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2016-03-09 16:53:53.490  INFO 27502 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+2016-03-09 16:53:53.490  INFO 27502 --- [    Test worker] WebAppIntegrationTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@437b85a5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@11ac99f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33f02324]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2016-03-09 16:53:53.577  INFO 27502 --- [    Test worker] c.m.s.c.WelcomeControllerWebTest         : Starting WelcomeControllerWebTest on note-318 with PID 27502 (/home/raphael/git/SpringBootMVC/build/classes/test started by raphael in /home/raphael/git/SpringBootMVC)
+2016-03-09 16:53:53.577  INFO 27502 --- [    Test worker] c.m.s.c.WelcomeControllerWebTest         : No active profile set, falling back to default profiles: default
+2016-03-09 16:53:53.586  INFO 27502 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@483755b5: startup date [Wed Mar 09 16:53:53 BRT 2016]; root of context hierarchy
+2016-03-09 16:53:54.509  INFO 27502 --- [    Test worker] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9000
+2016-03-09 16:53:54.516  INFO 27502 --- [    Test worker] org.eclipse.jetty.server.Server          : jetty-9.2.15.v20160210
+2016-03-09 16:53:54.953  INFO 27502 --- [    Test worker] application                              : Initializing Spring embedded WebApplicationContext
+2016-03-09 16:53:54.956  INFO 27502 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1370 ms
+2016-03-09 16:53:55.149  INFO 27502 --- [    Test worker] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-03-09 16:53:55.153  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2016-03-09 16:53:55.154  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-03-09 16:53:55.155  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-03-09 16:53:55.155  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-03-09 16:53:55.156  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-03-09 16:53:55.156  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2016-03-09 16:53:55.156  INFO 27502 --- [    Test worker] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2016-03-09 16:53:55.880  INFO 27502 --- [    Test worker] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@423c5a1f{/,file:/tmp/jetty-docbase.2247364751799809614.9000/,AVAILABLE}
+2016-03-09 16:53:55.881  INFO 27502 --- [    Test worker] org.eclipse.jetty.server.Server          : Started @17838ms
+2016-03-09 16:53:56.024  INFO 27502 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@483755b5: startup date [Wed Mar 09 16:53:53 BRT 2016]; root of context hierarchy
+2016-03-09 16:53:56.027  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.029  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.043  INFO 27502 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/page2]}" onto public java.lang.String com.movile.springbootmvc.controller.PaginaController.pagina2(java.util.Map<java.lang.String, java.lang.Object>)
+2016-03-09 16:53:56.044  INFO 27502 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.movile.springbootmvc.controller.WelcomeController.welcome(java.util.Map<java.lang.String, java.lang.Object>)
+2016-03-09 16:53:56.046  INFO 27502 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-03-09 16:53:56.047  INFO 27502 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-03-09 16:53:56.049  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.050  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.095  INFO 27502 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-09 16:53:56.095  INFO 27502 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-09 16:53:56.125  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.127  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.151  INFO 27502 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-03-09 16:53:56.277  INFO 27502 --- [    Test worker] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on [class org.springframework.boot.actuate.autoconfigure.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$8a5d1fa7]: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2016-03-09 16:53:56.500  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.507  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.512  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2016-03-09 16:53:56.517  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.522  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.527  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.536  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2016-03-09 16:53:56.543  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.550  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2016-03-09 16:53:56.556  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.558  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.563  INFO 27502 --- [    Test worker] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig],methods=[GET]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2016-03-09 16:53:56.585  INFO 27502 --- [    Test worker] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2016-03-09 16:53:56.703  INFO 27502 --- [    Test worker] application                              : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-03-09 16:53:56.706  INFO 27502 --- [    Test worker] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-03-09 16:53:56.714  INFO 27502 --- [    Test worker] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2016-03-09 16:53:56.755  INFO 27502 --- [    Test worker] o.eclipse.jetty.server.ServerConnector   : Started ServerConnector@4f371ec9{HTTP/1.1}{0.0.0.0:9000}
+2016-03-09 16:53:56.766  INFO 27502 --- [    Test worker] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9000 (http/1.1)
+2016-03-09 16:53:56.784  INFO 27502 --- [    Test worker] c.m.s.c.WelcomeControllerWebTest         : Started WelcomeControllerWebTest in 3.286 seconds (JVM running for 18.741)
+2016-03-09 16:54:02.789  WARN 27502 --- [qtp986084430-20] o.eclipse.jetty.servlet.ServletHandler   : Error for /
+
+java.lang.NoClassDefFoundError: Could not initialize class org.springframework.web.util.NestedServletException
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:980) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:224) ~[websocket-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$ApplicationContextHeaderFilter.doFilterInternal(EndpointWebMvcAutoConfiguration.java:295) ~[spring-boot-actuator-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:102) ~[spring-boot-actuator-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:68) ~[spring-boot-actuator-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652) ~[jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585) [jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577) [jetty-security-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515) [jetty-servlet-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.Server.handle(Server.java:499) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257) [jetty-server-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544) [jetty-io-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635) [jetty-util-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555) [jetty-util-9.2.15.v20160210.jar:9.2.15.v20160210]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_74]
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
